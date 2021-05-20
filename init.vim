@@ -71,9 +71,3 @@ let g:airline#extensions#tabline#fnamemode=':t'
 nmap <leader>1 :bp<CR>
 nmap <leader>2 :bn<CR>
 nmap <C-w> :bd<CR>
-
-" Self Inflicted Pain
-:map <Up> <Nop>
-:map <Left> <Nop>
-:map <Right> <Nop>
-:map <Down> <Nop>
