@@ -20,7 +20,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall
 endif
-    
+
 call plug#begin()
 
 " here you'll add all the plugins needed
@@ -39,7 +39,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'morhetz/gruvbox'
+Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'norcalli/nvim-colorizer.lua'
@@ -62,10 +62,11 @@ nmap <F2> : NERDTreeToggle<CR>
 lua require 'colorizer'.setup()
 
 " ColorScheme
-colorscheme gruvbox
+colorscheme spaceduck
+set background=dark
 
 " Airline Stuff
-let g:airline_theme = 'gruvbox'
+let g:airline_theme = 'spaceduck'
 let g:airline#extensions#tabinline#enabled=1
 let g:airline#extensions#tabline#fnamemode=':t'
 nmap <leader>1 :bp<CR>
