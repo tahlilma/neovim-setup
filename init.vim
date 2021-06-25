@@ -56,6 +56,7 @@ endif
 " NERDTree
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeMinimalUI=1
+let NERDTreeShowHidden=1
 nmap <F2> : NERDTreeToggle<CR>
 
 " Colorizer
